@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Особистий вебсайт Кавковської Єлизавети</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Заголовок сторінки -->
+    <header>
+        <h1>Особистий вебсайт Кавковської Єлизавети</h1>
+    </header>
+
+    <!-- Меню навігації -->
+    <nav>
+        <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#conteiner">Практичні роботи та лаби</a></li>
+            <li><a href="#schedule">Розклад</a></li> <!-- Added link to schedule -->
+        </ul>
+    </nav>
+
+    <!-- Секція "Про мене" -->
+    <section id="about">
+        <h2>Про мене</h2>
+        <img src="photo.jpg" alt="Фото студента" class="student-photo">
+        <p>Мене звати Єлизавета Кавковська. Я студент кафедри "Технологій Цифрового Розвитку" в групі ТЦР-23 в ДУІКТ. Мої Хоббі та захоплення: Малювання, створення невеликих історій та сюжетів для новел, ігор і так далі. Граю у VALORANT.</p>
+        <p>Контактні дані:</p>
+        <ul>
+            <li>Email: elizabethkavkovska@gmail.com</li>
+            <li>Телефон: Секретна інформація</li>
+            <li>Telegram: <a href="https://t.me/Emmeraldio">@Emmeraldio</a></li>
+        </ul>
+    </section>
+
+    <!-- Секція "Практичні роботи" -->
+
+    <div class="container">
+    <section id="conteiner">
+        <h2>Практичні та лабораторні роботи</h2>
+        <div class="section">
+            <!-- Лабораторні роботи -->
+            <div class="column">
+                <h3>Останні лабораторні роботи</h3>
+                <div class="card">
+                    <img src="lab4.png" alt="Лабораторна робота №4">
+                    <h4>Лабораторна робота №4</h4>
+                    <p>22 Oct 2024 | CSS Flexbox</p>
+                    <a href="https://emmeraldio.github.io/Lab4/">Перейти</a>
+                </div>
+                <div class="card">
+                    <img src="lab3.png" alt="Лабораторна робота №3">
+                    <h4>Лабораторна робота №3</h4>
+                    <p>24 Sep 2024 | CSS Flexbox </p>
+                    <a href="https://emmeraldio.github.io/Youtube-Clone/">Перейти</a>
+                </div>
+                <div class="view-all">
+                    <a href="#" onclick="openModal('labsModal')">Подивитися всі...</a>
+                </div>
+            </div>
+
+            <!-- Практичні роботи -->
+            <div class="column">
+                <h3>Останні практичні роботи</h3>
+                <div class="card">
+                    <img src="Pr4.png" alt="Практична робота №4">
+                    <h4>Практична робота №4</h4>
+                    <p>29 Oct 2024 | CSS Grid </p>
+                    <a href="https://emmeraldio.github.io/Practice4/">Перейти</a>
+                </div>
+                <div class="card">
+                    <img src="Lab3.png" alt="Практична робота та лабораторна робота №3">
+                    <h4>Практична робота №3</h4>
+                    <p>10 Oct 2024 | CSS Flexbox</p>
+                    <a href="https://emmeraldio.github.io/Youtube-Clone/">Перейти</a>
+                </div>
+                <div class="view-all">
+                    <a href="#" onclick="openModal('practicesModal')">Подивитися всі...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Модальное окно для лабораторних робіт -->
+    <div id="labsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('labsModal')">&times;</span>
+            <h3>Інші лабораторні роботи</h3>
+            <div class="card">
+                <h4>Лабораторна робота №1</h4>
+                <p>10 Sep 2024 | Основи HTML</p>
+                <a href="https://remeraldb.github.io/LizaRepository/">Перейти</a>
+            </div>
+            <div class="card">
+                <h4>Лабораторна робота №2</h4>
+                <p>24 Sep 2024 | Основи CSS </p>
+                <a href="https://emmeraldio.github.io/lab2.1/">Перейти</a>
+            </div>
+            <div class="card">
+                <h4>Лабораторна робота №3</h4>
+                <p>10 Oct 2024 | CSS Flexbox </p>
+                <a href="https://emmeraldio.github.io/Youtube-Clone/">Перейти</a>
+            </div>
+            <div class="card">
+                <h4>Лабораторна робота №4</h4>
+                <p> Nov 2024 | CSS Grid </p>
+                <a href="https://emmeraldio.github.io/Lab4/">Перейти</a>
+            </div>
+            <div class="card">
+                <h4>Лабораторна робота №5</h4>
+                <p>05 Nov 2024 | Figma </p>
+                <a href="#">Перейти</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для практичних робіт -->
+    <div id="practicesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('practicesModal')">&times;</span>
+            <h3>Інші практичні роботи</h3>
+            <div class="card">
+                <h4>Практична робота №1</h4>
+                <p>03 Sep 2024 | Основи CSS</p>
+                <a href="https://emmeraldio.github.io/MyInfoWebsite/">Перейти</a>
+            </div>
+            <div class="card">
+                <h4>Практична робота №2</h4>
+                <p>17 Sep 2024 | Grid Layout</p>
+                <a href="https://emmeraldio.github.io/practice2/">Перейти</a>
+            </div>
+            <div class="card">
+                <h4>Практична робота №3</h4>
+                <p>10 Oct 2024 | Youtube Clone</p>
+                <a href="https://emmeraldio.github.io/Youtube-Clone/">Перейти</a>
+            </div>
+            <div class="card">
+                <h4>Практична робота №4</h4>
+                <p>29 Oct 2024 | Keyboard</p>
+                <a href="https://emmeraldio.github.io/Practice4/">Перейти</a>
+            </div>
+            <div class="card">
+                <h4>Практична робота №5</h4>
+                <p>5 Oct 2024 | Figma style</p>
+                <a href="">Перейти</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <!-- Секція "Розклад" -->
+    <section id="schedule">
+        <h2>Розклад занять</h2>
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Час</th>
+                    <th>23.09.2024<br>Понеділок</th>
+                    <th>24.09.2024<br>Вівторок</th>
+                    <th>25.09.2024<br>Середа</th>
+                    <th>26.09.2024<br>Четвер</th>
+                    <th>27.09.2024<br>П'ятниця</th>
+                    <th>28.09.2024<br>Субота</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:00 - 09:35</td>
+                    <td class="lectures">ВМ [Лк] <br> ауд. Дистанц. <br> Білоусова С.В.</td>
+                    <td class="labs">ООП-2016 [Лб] <br> ауд. 132 <br> Вишнівський О.В.</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td class="practice">ВМ [Пз] <br> ауд. 320 <br> Олімпієва Ю.І.</td>
+                    <td class="lectures">УМ-2022 [Лк] <br> ауд. Дистанц. <br> Стежко С.О.</td>
+                </tr>
+                <tr>
+                    <td>09:45 - 11:20</td>
+                    <td class="lectures">ПППІ-15 [Лк] <br> ауд. Дистанц. <br> Сватко В.В.</td>
+                    <td class="labs">ДО [Лб] <br> ауд. 301 <br> Бажан Т.О.</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td class="practice">УМ-2022 [Пз] <br> ауд. 129 <br> Стежко С.О.</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>11:45 - 13:20</td>
+                    <td class="lectures">WEB тех-2016 [Лк] <br> ауд. Дистанц. <br> Дзюба В.В.</td>
+                    <td class="labs">WEB тех-2016 [Лб] <br> ауд. 221 <br> Дзюба В.В.</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td class="practice">ПППІ-15 [Пз] <br> ауд. 207 <br> Сватко В.В.</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>13:30 - 15:05</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td class="practice">ВМ [Пз] <br> ауд. 511 <br> Олімпієва Ю.І.</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>15:15 - 16:50</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td class="seminars">ФЛ [Сем] <br> ауд. 223 <br> Власенко В.О.</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <th>Час</th>
+                    <th>30.09.2024<br>Понеділок</th>
+                    <th>01.10.2024<br>Вівторок</th>
+                    <th>02.10.2024<br>Середа</th>
+                    <th>03.10.2024<br>Четвер</th>
+                    <th>04.10.2024<br>П'ятниця</th>
+                    <th>05.10.2024<br>Субота</th>
+                    <tr>
+                        <td>08:00 - 09:35</td>
+                        <td class="lectures">ВМ [Лк] <br> ауд. Дистанц. <br> Білоусова С.В.</td>
+                        <td class="practice">ООП-2016 [Пк] <br> ауд. 219 <br> Вишнівський О.В.</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td class="lectures">УМ-2022 [Лк] <br> ауд. Дистанц. <br> Стежко С.О.</td>
+                    </tr>
+                    <tr>
+                        <td>09:45 - 11:20</td>
+                        <td class="lectures">ДО [Лк] <br> ауд. Дистанц. <br> Бажан Т.О.</td>
+                        <td class="practice">ДО [Пк] <br> ауд. 320 <br> Бажан Т.О.</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>11:45 - 13:20</td>
+                        <td class="lectures">ООП-2016 [Лк] <br> ауд. Дистанц. <br> Вишнівський О.В</td>
+                        <td class="practice">WEB тех-2016 [ПЗ] <br> ауд. 0-25 <br> Дзюба В.В.</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td class="practice">ПППІ-15 [Пз] <br> ауд. 207 <br> Сватко В.В.</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>13:30 - 15:05</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td class="practice">ВМ [Пз] <br> ауд. 511 <br> Олімпієва Ю.І.</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>15:15 - 16:50</td>
+                        <td class="lectures">ФЛ [Лк] <br> ауд. Дистанц. <br> Власенко В.О.</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td class="labs">ВМ [Лб] <br> ауд. 517 <br> Олімпієва Ю.І.</td>
+                        <td>---</td>
+                        
+                </tr>
+                <tr>
+                    <td>17:00 - 18:35</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td class="practice">ФВ [Пз] <br> ауд. Стадіон <br> Безуглий Ю.Б.</td>
+                        <td>---</td>
+                </tr>
+                <tr>
+                    <th>Час</th>
+                    <th>07.10.2024<br>Понеділок</th>
+                    <th>08.10.2024<br>Вівторок</th>
+                    <th>09.10.2024<br>Середа</th>
+                    <th>10.10.2024<br>Четвер</th>
+                    <th>11.10.2024<br>П'ятниця</th>
+                    <th>12.10.2024<br>Субота</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:00 - 09:35</td>
+                    <td class="lectures">ВМ [Лк] <br> ауд. Дистанц. <br> Білоусова С.В.</td>
+                    <td class="labs">ООП-2016 [Лб] <br> ауд. 132 <br> Вишнівський О.В.</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td class="practice">ВМ [Пз] <br> ауд. 320 <br> Олімпієва Ю.І.</td>
+                    <td class="lectures">УМ-2022 [Лк] <br> ауд. Дистанц. <br> Стежко С.О.</td>
+                </tr>
+                <tr>
+                    <td>09:45 - 11:20</td>
+                    <td class="lectures">ПППІ-15 [Лк] <br> ауд. Дистанц. <br> Сватко В.В.</td>
+                    <td class="labs">ДО [Лб] <br> ауд. 301 <br> Бажан Т.О.</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td class="practice">УМ-2022 [Пз] <br> ауд. 129 <br> Стежко С.О.</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>11:45 - 13:20</td>
+                    <td class="lectures">WEB тех-2016 [Лк] <br> ауд. Дистанц. <br> Дзюба В.В.</td>
+                    <td class="labs">WEB тех-2016 [Лб] <br> ауд. 221 <br> Дзюба В.В.</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td class="practice">ПППІ-15 [Пз] <br> ауд. 207 <br> Сватко В.В.</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>13:30 - 15:05</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td class="practice">ВМ [Пз] <br> ауд. 511 <br> Олімпієва Ю.І.</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>15:15 - 16:50</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td class="seminars">ФЛ [Сем] <br> ауд. 223 <br> Власенко В.О.</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                </tr>
+                    <th>Час</th>
+                    <th>14.10.2024<br>Понеділок</th>
+                    <th>15.10.2024<br>Вівторок</th>
+                    <th>16.10.2024<br>Середа</th>
+                    <th>17.10.2024<br>Четвер</th>
+                    <th>18.10.2024<br>П'ятниця</th>
+                    <th>19.10.2024<br>Субота</th>
+                    <tr>
+                        <td>08:00 - 09:35</td>
+                        <td class="lectures">ВМ [Лк] <br> ауд. Дистанц. <br> Білоусова С.В.</td>
+                        <td class="practice">ООП-2016 [Пк] <br> ауд. 219 <br> Вишнівський О.В.</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td class="lectures">WEB тех-2016 [Лк] <br> ауд. Дистанц. <br> Дзюба В.В.</td>
+                    </tr>
+                    <tr>
+                        <td>09:45 - 11:20</td>
+                        <td class="lectures">ДО [Лк] <br> ауд. Дистанц. <br> Бажан Т.О.</td>
+                        <td class="practice">ДО [Пк] <br> ауд. 320 <br> Бажан Т.О.</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>11:45 - 13:20</td>
+                        <td class="lectures">ООП-2016 [Лк] <br> ауд. Дистанц. <br> Вишнівський О.В</td>
+                        <td class="practice">WEB тех-2016 [ПЗ] <br> ауд. 0-25 <br> Дзюба В.В.</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td class="practice">ПППІ-15 [Пз] <br> ауд. 207 <br> Сватко В.В.</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>13:30 - 15:05</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td class="practice">ВМ [Пз] <br> ауд. 511 <br> Олімпієва Ю.І.</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>15:15 - 16:50</td>
+                        <td class="lectures">ФЛ [Лк] <br> ауд. Дистанц. <br> Власенко В.О.</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td class="labs">ВМ [Лб] <br> ауд. 517 <br> Олімпієва Ю.І.</td>
+                        <td>---</td>
+                        
+                </tr>
+                <tr>
+                    <td>17:00 - 18:35</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td class="practice">ФВ [Пз] <br> ауд. Стадіон <br> Безуглий Ю.Б.</td>
+                        <td>---</td>
+                </tr>
+            </tbody>
+        </table>
+                <!-- Add other days similarly -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <p>Контакти: elizabethkavkovska@gmail.com | <a href="https://github.com/Emmeraldio">GitHub</a></p>
+        <p>Telegram: @Emmeraldio | <a href="https://t.me/Emmeraldio">Telegram</a></p>
+        <p>© 2024 Emmerald Projects. Всі права захищені.</p>
+    </footer>
+
+</body>
+</html>
